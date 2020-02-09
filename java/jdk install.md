@@ -29,11 +29,11 @@
 
    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfbc92c0-e2ad-4bd6-8c30-83ee0e2be9a0/Screen_Shot_2020-02-04_at_11.16.40_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfbc92c0-e2ad-4bd6-8c30-83ee0e2be9a0/Screen_Shot_2020-02-04_at_11.16.40_PM.png)
 
-   이런 창이 나오면 JDK를 설치를 끝났다.
+   - 이런 창이 나오면 JDK를 설치를 끝났다.
 
-   자 그럼 이제 JDK가 성공적으로 잘 설치되었는지 확인해봐야 한다.
+     자 그럼 이제 JDK가 성공적으로 잘 설치되었는지 확인해봐야 한다.
 
-   맥에서 Terminal이나, iTerm를 실행 시킨다.
+     맥에서 Terminal이나, iTerm를 실행 시킨다.
 
 3. JDK 설치 확인 
 
@@ -41,11 +41,11 @@
 
    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e6bbaec-2c55-45d7-ad1a-fa35c2e33edb/Screen_Shot_2020-02-04_at_11.17.42_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e6bbaec-2c55-45d7-ad1a-fa35c2e33edb/Screen_Shot_2020-02-04_at_11.17.42_PM.png)
 
-   이렇게 정상적으로 java version을 확인 성공적으로 나왔다면 "javac -version"을 입력해준다.
+   - 이렇게 정상적으로 java version을 확인 성공적으로 나왔다면 "javac -version"을 입력해준다.
 
    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b66c412-15b7-4490-baf8-d32186d6cef9/Screen_Shot_2020-02-04_at_11.18.07_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b66c412-15b7-4490-baf8-d32186d6cef9/Screen_Shot_2020-02-04_at_11.18.07_PM.png)
 
-javac -version까지 성공적으로 출력이 됬다면 JDK를 성공적으로 설치한 것이다.
+   - javac -version까지 성공적으로 출력이 됬다면 JDK를 성공적으로 설치한 것이다.
 
 
 
