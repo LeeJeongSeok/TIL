@@ -9,9 +9,9 @@
 
    - https://www.oracle.com/technetwork/java/javase/downloads/index.html 에 접속하여 최선 버전에 자바를 설치하거나, 자신이 원하는 버전에 자바를 설치할 수 있다. 필자는 Java 1.8 버전을 설치했다.
 
-     ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93855348-02e7-4136-8bd6-57f05e91ea18/Screen_Shot_2020-02-04_at_11.13.41_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93855348-02e7-4136-8bd6-57f05e91ea18/Screen_Shot_2020-02-04_at_11.13.41_PM.png)
+     <img width="2560" alt="oracle jdk install page 1" src="https://user-images.githubusercontent.com/13554850/74101237-07ac1480-4b7b-11ea-9da8-4ef377949927.png">
 
-     ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/563733a1-04d2-4570-a0a2-1e7afb9479cb/Screen_Shot_2020-02-04_at_11.13.08_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/563733a1-04d2-4570-a0a2-1e7afb9479cb/Screen_Shot_2020-02-04_at_11.13.08_PM.png)
+     <img width="550" alt="oracle jdk install page 2" src="https://user-images.githubusercontent.com/13554850/74101269-75f0d700-4b7b-11ea-9dbf-624b8aaba54c.png">
 
    - 여기서 주의할 점은 우리가 설치하려는 것은 JDK이다. JRE가 아니다. 
 
@@ -21,13 +21,13 @@
 
 2. JDK 설치 파일 실행
 
-   ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/75aaf890-59cf-4fad-b084-2e6877cda86b/Screen_Shot_2020-02-04_at_11.16.18_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/75aaf890-59cf-4fad-b084-2e6877cda86b/Screen_Shot_2020-02-04_at_11.16.18_PM.png)
+   <img width="615" alt="jdk install 1" src="https://user-images.githubusercontent.com/13554850/74101278-8739e380-4b7b-11ea-89e0-b3b00e329627.png">
 
    필자가 사용하는 맥의 언어 설정을 영어로 해서 다소 다를 수가 있다....
 
    밑에 보이는 Continue(계속)를 누르면 비밀번호를 물어보는 창이 있는데 비밀번호 입력 후 설치를 계속 진행한다.
 
-   ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfbc92c0-e2ad-4bd6-8c30-83ee0e2be9a0/Screen_Shot_2020-02-04_at_11.16.40_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfbc92c0-e2ad-4bd6-8c30-83ee0e2be9a0/Screen_Shot_2020-02-04_at_11.16.40_PM.png)
+   <img width="620" alt="jdk install 2" src="https://user-images.githubusercontent.com/13554850/74101286-9882f000-4b7b-11ea-8f72-9ba5b5e18dc4.png">
 
    - 이런 창이 나오면 JDK를 설치를 끝났다.
 
@@ -39,11 +39,11 @@
 
    - Terminal을 열어 명렁어 입력 커서에 "java-version"이라고 입력한 후
 
-   ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e6bbaec-2c55-45d7-ad1a-fa35c2e33edb/Screen_Shot_2020-02-04_at_11.17.42_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e6bbaec-2c55-45d7-ad1a-fa35c2e33edb/Screen_Shot_2020-02-04_at_11.17.42_PM.png)
+   <img width="471" alt="jdk install check 1" src="https://user-images.githubusercontent.com/13554850/74101299-a8023900-4b7b-11ea-9546-0d26de1746f3.png">
 
    - 이렇게 정상적으로 java version을 확인 성공적으로 나왔다면 "javac -version"을 입력해준다.
 
-   ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b66c412-15b7-4490-baf8-d32186d6cef9/Screen_Shot_2020-02-04_at_11.18.07_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b66c412-15b7-4490-baf8-d32186d6cef9/Screen_Shot_2020-02-04_at_11.18.07_PM.png)
+   <img width="263" alt="jdk install check 2" src="https://user-images.githubusercontent.com/13554850/74101313-b4869180-4b7b-11ea-988c-543399993ace.png">
 
    - javac -version까지 성공적으로 출력이 됬다면 JDK를 성공적으로 설치한 것이다.
 
