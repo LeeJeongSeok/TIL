@@ -4,7 +4,7 @@
 ## 디렉토리, 패키지, 클래스 등 생성 목록 보기
 
 맥 : Command + n
-
+
 윈도우, 리눅스 : Alt + Insert
 
 ## 코드 템플릿
@@ -65,6 +65,52 @@ System.out.println() : sout
 
 윈도우 : Alt + Ctrl + Shift + 방향키 왼,오른쪽
 
+## 인자값 즉시 보기
+
+맥 : Command + P
+
+윈도우, 리눅스 : Ctrl + P
+
+## 코드 구현부 즉시 보기
+
+맥 : Option + Space
+
+윈도우, 리눅스 : Shift + Ctrl + I(L이 아님)
+
+## Document 즉시 보기
+
+맥 : F1
+
+윈도우, 리눅스 : Ctrl + Q
 
 
+## 단어별 이동
+
+맥 : Alt + 뱡향키 왼/오른쪽
+
+윈도우, 리눅스 : Ctrl + 뱡향키 왼/오른쪽
+
+## 단어별 선택
+
+맥 : Shift + Alt + 뱡향키 왼/오른쪽
+
+윈도우, 리눅스 : Shift + Ctrl + 뱡향키 왼/오른쪽
+
+## 라인 첫/끝 이동
+
+맥 : Fn + 방향키 왼,오른쪽
+
+윈도우, 리눅스 : Home, End
+
+## 라인 전체 선택
+
+맥 : Shift + Command + 방향키 왼/오른쪽
+
+윈도우, 리눅스 : Shift + Home, End
+
+## Page Up/Down
+
+맥 : Fn + 방향키 위/아래
+
+윈도우, 리눅스 : Page Up/Down
 
