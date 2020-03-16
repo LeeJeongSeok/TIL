@@ -538,3 +538,81 @@ Spring 개발 경험이 적지만, Spring Boot를 간단히 배우면서 느꼈�
 
 - 2년만에 다시 학교로 가지만.. 정말로 가기 싫다 😂
 - 다음주에 내가 해야할 일이 정말 많은거 같다. 집중해서 잘할 수 있도록 노력하자 👀
+
+
+
+## 20200316 TIL
+
+### 오늘 계획한 일
+
+- 금일 개강한 온라인 강의 듣기
+- 전화번호 프로그램 수정 & 삭제기능 파일에 반영되도록 고치기
+- 전화번호 프로그램 기능별로 메소드화 시키기
+### 오늘 한 일
+
+- 금일 개강한 온라인 강의 듣기 ✅
+- 전화번호 프로그램 수정 & 삭제기능 파일에 반영되도록 고치기 ✅
+- 전화번호 프로그램 기능별로 메소드화 시키기 ✅
+### 배운 점
+
+어제 수정 & 삭제 기능을 파일에 반영시키기 위해서 머리를 쥐어짜보고 검색도 해봤다. 최초에 내가 생각한 로직은 파일을 작성할 때 delete(), append() 메소드들을 이용해서 반영하면 될꺼라 생각했었다. 하지만 실험해본 결과 하나의 입/출력에서 삭제하고, 업데이트하기엔 무리가 있던 것이었다. 그 후에 방법이 떠오르지 않아 구글링을 해본 결과 대부분의 경우가 먼저 읽어올 파일을 Read 한 후 Write 할 때 수정 & 삭제에 관한 데이터를 조건문에 반영하면 그 데이터만 빠지고 새로운 텍스트 파일에 파일이 작성된다. 그 후 기존에 있던 파일에 덮어쓰기하는 방식으로 진행된다..
+
+```
+public void deleteInfo(Object key) {
+
+
+        System.out.println("values : " + key.toString());
+
+        try {
+
+            File inputFile = new File(Properties.filePath);
+            File tempFile = new File(Properties.filePath);
+
+
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFile));
+            PrintWriter printWrite = new PrintWriter(new FileWriter(tempFile));
+
+            String deleteString = key.toString();
+            String currentLine;
+
+            while ((currentLine = bufferedReader.readLine()) != null) {
+
+                System.out.println("currentLine  : " + currentLine);
+
+                printWrite.println(currentLine);
+
+                if (currentLine.equals(deleteString)) {
+                    printWrite.println("");
+                }
+            }
+
+            bufferedReader.close();
+            printWrite.close();
+
+            tempFile.renameTo(inputFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+```
+
+전화번호 프로그램 기능 중 해당 매게변수로 들어온 key값의 대한 데이터를 삭제하는 기능이다.
+기존에 있던 데이터들을 새로운 파일에 그대로 가져오면서 삭제할 데이터에 대한 조건만 추가한 구조이다. 이렇게 짜면 key 값으로 들어온 데이터들은 새로운 file에 작성되지 않은 상태로 만들어진다. 그 후 기존에 있던 파일 이름으로 덮어써서 파일을 업데이트한다.
+
+### 고민거리
+
+내 코드에 관해서 대략적으로 리뷰를 한 거 같은데.. 뭔가 스스로 설명하면서도 미숙하다는 느낌을 받았다.
+그 말은 아직 내가 이 코드를 완벽하게 이해하지 못했다라는 의미이다. 내가 작성한 코드인만큼 누구보다 더 깊게 이해하고 누군가 물어봤을때 쉽게 알려주고싶다 ㅎ..ㅎ
+
+#### 더 노력하자.. 
+
+### 내일 할 일
+
+- 비대면 강의 수강하기 및 과제 확인
+- 3/18까지 왠만한 과제들 제출하기
+- 전화번호 프로그램 중복 제거 및 메소드화 작업 2탄
+### 느낀점
+
+- 정말 요즘 변수명, 함수명 짜기가 너무힘들다.. 개발자의 글쓰기 책을 봐서 그런 건지 모르겠지만 뭔가 더 어렵게 느껴진다..
+- 다른 사람들과 협업을 하기 위해서라면 변수명, 함수명은 충분히 고민해야 한다고 느꼈다.
+- 그냥 느낌으로 다가왔지만, 주석이 없는 코드가 제일 읽기 좋은 코드라고 들었는데 진짜 그 말이 맞는 거 같다. 👍
